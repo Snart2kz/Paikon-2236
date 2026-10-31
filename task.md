@@ -1,0 +1,23 @@
+ # Progression
+
+- Plan web personnalisé validé par utilisateur.
+- Produit nommé Paikon Plus, création d'un concept fictif autorisée.
+- App initialisée dans /home/user/paikon, port web 4200.
+- Skills app, image-generation, video-generation lus avec références pertinentes.
+- Planche produit générée et vérifiée visuellement : public/images/product-chart.png.
+- Storyboard généré et vérifié : public/images/storyboard.png.
+- sequence-plan.md contient découpage et prompt complet, à faire approuver avant génération vidéo (checkpoint obligatoire).
+- Prochaine étape après approbation : lire schéma modèle vidéo reference-to-video le moins cher adapté, générer 15 s, QA, extraire WebP, remplacer design.md starter avant UI, construire frontend et moteur de séquence, tester build et navigateur desktop/mobile, livrer website.
+- Approbation explicite de la séquence et du design reçue.
+- Génération Wan vidéo tentée : refus « Video generation requires a paid Runable plan ». Blocage annoncé à utilisateur. Alternative images dans le scope autorisé.
+- Hero off, hero lit, exploded et rear générés et vérifiés. 181 frames desktop 1120x630 et mobile 720x405 synthétisés avec zoom, éclairage progressif, déplacement des couches, fondu arrière.
+- UI frontend implémentée : hero/sticky, chapitres, technologie, détails, FAQ, écran de jeu fictif, CTA de relecture.
+- Scrubbing déterministe : scroll normalisé vers index arrondi, requestAnimationFrame, cache décodé 28 frames, chargement byte progressif, priorité frame demandée.
+- build complet réussi. Serveur tmux paikon-web actif sur4200.
+- Tests navigateur Chrome réussis : pas d'erreur JS, aucun overflow desktop/mobile, indices58/131/169/180 puis131/58/0 exacts. CTA, FAQ et menu mobile validés.
+- QA visuelle effectuée, amélioration en cours : remplacer anneaux LED dessinés par illumination photoréaliste éditée, feather des bords haut/bas, aligner transition arrière à90%.
+- Rendu final refait avec LEDs physiques photoréalistes, feather des bords, transition arrière90% et ajustements petits écrans.
+- Lint final :0 erreurs,0 warnings. Build final réussi.
+- Tests finaux : pixels identiques aux mêmes positions en sens inverse, aucune progression autonome lorsque le scroll reste fixe,0 vidéos autoplay, images de caractéristiques chargées, aucune erreur JS et aucun overflow desktop/mobile375x667 et390x844.
+- Captures hero/ingénierie/game/features inspectées visuellement. Serveur4200 actif, prêt à livraison website.
+- Limite assumée : séquence raster composée avec zoom, éclairage progressif, translation des couches et fondus; pas un film généré continu ni une simulation3D réelle. Génération vidéo reste bloquée par le plan Runable.
